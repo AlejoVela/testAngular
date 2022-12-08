@@ -1,0 +1,24 @@
+<div class="box position-absolute top-50 start-50 translate-middle">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>Login</mat-card-title>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput placeholder="Ingrese su email" [(ngModel)]="userData.email">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput placeholder="Ingrese su password" [(ngModel)]="userData.password">
+        </mat-form-field>
+      </p>
+      <button mat-raised-button class="w-100" (click)="this.login()">Registrar</button>
+    </mat-card-content>
+  </mat-card>
+</div>
